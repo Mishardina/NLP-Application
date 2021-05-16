@@ -44,9 +44,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>80</y>
+      <y>40</y>
       <width>291</width>
-      <height>111</height>
+      <height>151</height>
      </rect>
     </property>
     <widget class="QWidget" name="layoutWidget">
@@ -54,8 +54,8 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>291</width>
-       <height>101</height>
+       <width>308</width>
+       <height>141</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -65,68 +65,15 @@
          <string>Выберите режим работы:</string>
         </property>
         <property name="alignment">
-         <set>Qt::AlignCenter</set>
+         <set>Qt::AlignHCenter|Qt::AlignTop</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QRadioButton" name="radioButton">
+       <widget class="QCheckBox" name="checkBox">
         <property name="text">
-         <string>Полный анализ текста</string>
+         <string>CheckBox</string>
         </property>
-        <property name="checked">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="radioButton_2">
-        <property name="text">
-         <string>Анализ по выбранной части речи</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QComboBox" name="comboBox">
-        <item>
-         <property name="text">
-          <string>Существительное</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Глагол</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Прилагательное</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Причастие</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Деепричастие</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Наречие</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Слова, не относящихся
-к указанным выше частям речи</string>
-         </property>
-        </item>
        </widget>
       </item>
      </layout>
@@ -285,7 +232,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>30</y>
+      <y>0</y>
       <width>581</width>
       <height>41</height>
      </rect>
@@ -395,38 +342,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>radioButton</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>comboBox</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>180</x>
-     <y>122</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>180</x>
-     <y>169</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>comboBox</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>415</x>
-     <y>525</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>180</x>
-     <y>169</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>radioButton_6</sender>
    <signal>toggled(bool)</signal>
    <receiver>lineEdit_input</receiver>
@@ -454,22 +369,6 @@
     </hint>
     <hint type="destinationlabel">
      <x>705</x>
-     <y>169</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_input_file</sender>
-   <signal>clicked()</signal>
-   <receiver>comboBox</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>531</x>
-     <y>167</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>155</x>
      <y>169</y>
     </hint>
    </hints>

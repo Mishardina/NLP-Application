@@ -11,7 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QComboBox>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -34,9 +34,7 @@ public:
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_2;
-    QRadioButton *radioButton;
-    QRadioButton *radioButton_2;
-    QComboBox *comboBox;
+    QCheckBox *checkBox;
     QWidget *widget_2;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_3;
@@ -81,42 +79,23 @@ public:
         pushButton_3->setGeometry(QRect(510, 510, 111, 31));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 80, 291, 111));
+        widget->setGeometry(QRect(10, 40, 291, 151));
         layoutWidget = new QWidget(widget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(0, 0, 291, 101));
+        layoutWidget->setGeometry(QRect(0, 0, 308, 141));
         verticalLayout_4 = new QVBoxLayout(layoutWidget);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
         label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setAlignment(Qt::AlignCenter);
+        label_2->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
 
         verticalLayout_4->addWidget(label_2);
 
-        radioButton = new QRadioButton(layoutWidget);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setChecked(false);
+        checkBox = new QCheckBox(layoutWidget);
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
-        verticalLayout_4->addWidget(radioButton);
-
-        radioButton_2 = new QRadioButton(layoutWidget);
-        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
-        radioButton_2->setChecked(true);
-
-        verticalLayout_4->addWidget(radioButton_2);
-
-        comboBox = new QComboBox(layoutWidget);
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-
-        verticalLayout_4->addWidget(comboBox);
+        verticalLayout_4->addWidget(checkBox);
 
         widget_2 = new QWidget(centralwidget);
         widget_2->setObjectName(QString::fromUtf8("widget_2"));
@@ -208,7 +187,7 @@ public:
         pushButton_2->setGeometry(QRect(340, 510, 151, 31));
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(130, 30, 581, 41));
+        label_5->setGeometry(QRect(130, 0, 581, 41));
         label_5->setAlignment(Qt::AlignCenter);
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
@@ -248,11 +227,8 @@ public:
         QObject::connect(radioButton_5, SIGNAL(toggled(bool)), plainTextEdit, SLOT(setDisabled(bool)));
         QObject::connect(radioButton_6, SIGNAL(toggled(bool)), plainTextEdit, SLOT(setEnabled(bool)));
         QObject::connect(pushButton_3, SIGNAL(clicked()), plainTextEdit, SLOT(clear()));
-        QObject::connect(radioButton, SIGNAL(toggled(bool)), comboBox, SLOT(setDisabled(bool)));
-        QObject::connect(pushButton_2, SIGNAL(toggled(bool)), comboBox, SLOT(setEnabled(bool)));
         QObject::connect(radioButton_6, SIGNAL(toggled(bool)), lineEdit_input, SLOT(setDisabled(bool)));
         QObject::connect(radioButton_7, SIGNAL(toggled(bool)), lineEdit_output, SLOT(setDisabled(bool)));
-        QObject::connect(pushButton_input_file, SIGNAL(clicked()), comboBox, SLOT(clear()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -263,17 +239,7 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\237\321\203\321\201\320\272", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\236\321\207\320\270\321\201\321\202\320\270\321\202\321\214 \320\264\320\260\320\275\320\275\321\213\320\265", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\200\320\265\320\266\320\270\320\274 \321\200\320\260\320\261\320\276\321\202\321\213:", nullptr));
-        radioButton->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\273\320\275\321\213\320\271 \320\260\320\275\320\260\320\273\320\270\320\267 \321\202\320\265\320\272\321\201\321\202\320\260", nullptr));
-        radioButton_2->setText(QCoreApplication::translate("MainWindow", "\320\220\320\275\320\260\320\273\320\270\320\267 \320\277\320\276 \320\262\321\213\320\261\321\200\320\260\320\275\320\275\320\276\320\271 \321\207\320\260\321\201\321\202\320\270 \321\200\320\265\321\207\320\270", nullptr));
-        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "\320\241\321\203\321\211\320\265\321\201\321\202\320\262\320\270\321\202\320\265\320\273\321\214\320\275\320\276\320\265", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "\320\223\320\273\320\260\320\263\320\276\320\273", nullptr));
-        comboBox->setItemText(2, QCoreApplication::translate("MainWindow", "\320\237\321\200\320\270\320\273\320\260\320\263\320\260\321\202\320\265\320\273\321\214\320\275\320\276\320\265", nullptr));
-        comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "\320\237\321\200\320\270\321\207\320\260\321\201\321\202\320\270\320\265", nullptr));
-        comboBox->setItemText(4, QCoreApplication::translate("MainWindow", "\320\224\320\265\320\265\320\277\321\200\320\270\321\207\320\260\321\201\321\202\320\270\320\265", nullptr));
-        comboBox->setItemText(5, QCoreApplication::translate("MainWindow", "\320\235\320\260\321\200\320\265\321\207\320\270\320\265", nullptr));
-        comboBox->setItemText(6, QCoreApplication::translate("MainWindow", "\320\241\320\273\320\276\320\262\320\260, \320\275\320\265 \320\276\321\202\320\275\320\276\321\201\321\217\321\211\320\270\321\205\321\201\321\217\n"
-"\320\272 \321\203\320\272\320\260\320\267\320\260\320\275\320\275\321\213\320\274 \320\262\321\213\321\210\320\265 \321\207\320\260\321\201\321\202\321\217\320\274 \321\200\320\265\321\207\320\270", nullptr));
-
+        checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \320\270\320\275\321\201\321\202\321\200\321\203\320\274\320\265\320\275\321\202 \320\262\320\262\320\276\320\264\320\260:", nullptr));
         radioButton_6->setText(QCoreApplication::translate("MainWindow", "\320\241 \321\215\320\272\321\200\320\260\320\275\320\260", nullptr));
         radioButton_5->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267 \321\202\320\265\320\272\321\201\321\202\320\276\320\262\320\276\320\263\320\276 \321\204\320\260\320\271\320\273\320\260", nullptr));
