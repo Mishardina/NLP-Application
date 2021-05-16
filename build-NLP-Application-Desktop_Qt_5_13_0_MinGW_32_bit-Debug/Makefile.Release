@@ -471,21 +471,38 @@ release/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qdesktopwidget.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qguiapplication.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qinputmethod.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QMenuBar \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qmenubar.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qmenu.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qaction.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qactiongroup.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QComboBox \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qcombobox.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qabstractitemdelegate.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qstyleoption.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qabstractspinbox.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtGui/qvalidator.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtCore/qregularexpression.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qslider.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qabstractslider.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qstyle.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qtabbar.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qrubberband.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qframe.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtCore/qabstractitemmodel.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QHBoxLayout \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qboxlayout.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qlayout.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qlayoutitem.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qgridlayout.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QLabel \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qlabel.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QLineEdit \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qlineedit.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextcursor.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextformat.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtGui/qpen.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextoption.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QPlainTextEdit \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qplaintextedit.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qtextedit.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qframe.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextdocument.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextoption.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextcursor.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextformat.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtGui/qpen.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qabstracttextdocumentlayout.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qtextlayout.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtGui/qglyphrun.h \
@@ -494,11 +511,15 @@ release/mainwindow.o: ../mainwindow.cpp ../mainwindow.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QPushButton \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qpushbutton.h \
 		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QStatusBar \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qstatusbar.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QToolBar \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qtoolbar.h \
-		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QWidget
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QRadioButton \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qradiobutton.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QVBoxLayout \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QWidget \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/QFileDialog \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qfiledialog.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtCore/qdir.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtCore/qfileinfo.h \
+		F:/Qt/5.13.0/mingw73_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mainwindow.o ../mainwindow.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 
