@@ -27,7 +27,6 @@ def read_needed_pos_list(pos_filename):
 def detect_parts_of_speech():
     morph = pymorphy2.MorphAnalyzer()
     pos_list = read_needed_pos_list('needed_pos.csv')
-    print(pos_list)
     THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
     buff_inp_file = os.path.join(THIS_FOLDER, "buffer_text.txt")
     fin = open(buff_inp_file, encoding = 'utf-8')
@@ -56,7 +55,7 @@ def detect_parts_of_speech():
         string = string + '\n'
         an_text.append(string)
     fin.close()
-    buff_out_file = os.path.join(THIS_FOLDER, "outbuf.txt")
+    buff_out_file = os.path.join(THIS_FOLDER, "buffer_analysed_text.txt")
     fout = open(buff_out_file, 'w', encoding = 'utf-8')
     for line in an_text:
         fout.write(line)

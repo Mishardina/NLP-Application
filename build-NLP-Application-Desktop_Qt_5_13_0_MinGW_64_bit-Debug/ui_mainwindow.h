@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -35,7 +34,6 @@ public:
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_2;
-    QCheckBox *checkBox;
     QWidget *widget_2;
     QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_3;
@@ -69,21 +67,21 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(832, 555);
+        MainWindow->resize(837, 677);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         startAnalysisButton = new QPushButton(centralwidget);
         startAnalysisButton->setObjectName(QString::fromUtf8("startAnalysisButton"));
-        startAnalysisButton->setGeometry(QRect(230, 510, 91, 31));
+        startAnalysisButton->setGeometry(QRect(230, 610, 91, 31));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(510, 510, 111, 31));
+        pushButton_3->setGeometry(QRect(490, 610, 111, 31));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 40, 291, 151));
+        widget->setGeometry(QRect(10, 40, 291, 241));
         layoutWidget = new QWidget(widget);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(0, 0, 308, 141));
+        layoutWidget->setGeometry(QRect(0, 0, 291, 221));
         verticalLayout_4 = new QVBoxLayout(layoutWidget);
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -92,11 +90,6 @@ public:
         label_2->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
 
         verticalLayout_4->addWidget(label_2);
-
-        checkBox = new QCheckBox(layoutWidget);
-        checkBox->setObjectName(QString::fromUtf8("checkBox"));
-
-        verticalLayout_4->addWidget(checkBox);
 
         widget_2 = new QWidget(centralwidget);
         widget_2->setObjectName(QString::fromUtf8("widget_2"));
@@ -185,14 +178,14 @@ public:
 
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(340, 510, 151, 31));
+        pushButton_2->setGeometry(QRect(330, 610, 151, 31));
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(130, 0, 581, 41));
         label_5->setAlignment(Qt::AlignCenter);
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(10, 210, 811, 291));
+        horizontalLayoutWidget->setGeometry(QRect(10, 310, 811, 291));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -208,7 +201,7 @@ public:
 
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
         horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(10, 190, 811, 16));
+        horizontalLayoutWidget_2->setGeometry(QRect(10, 290, 811, 16));
         horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -236,8 +229,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         startAnalysisButton->setText(QCoreApplication::translate("MainWindow", "\320\237\321\203\321\201\320\272", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\236\321\207\320\270\321\201\321\202\320\270\321\202\321\214 \320\264\320\260\320\275\320\275\321\213\320\265", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\200\320\265\320\266\320\270\320\274 \321\200\320\260\320\261\320\276\321\202\321\213:", nullptr));
-        checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \321\207\320\260\321\201\321\202\320\270 \321\200\320\265\321\207\320\270 \320\264\320\273\321\217 \320\277\320\276\320\270\321\201\320\272\320\260:", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\261\320\265\321\200\320\270\321\202\320\265 \320\270\320\275\321\201\321\202\321\200\321\203\320\274\320\265\320\275\321\202 \320\262\320\262\320\276\320\264\320\260:", nullptr));
         radioButton_6->setText(QCoreApplication::translate("MainWindow", "\320\241 \321\215\320\272\321\200\320\260\320\275\320\260", nullptr));
         radioButton_5->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267 \321\202\320\265\320\272\321\201\321\202\320\276\320\262\320\276\320\263\320\276 \321\204\320\260\320\271\320\273\320\260", nullptr));

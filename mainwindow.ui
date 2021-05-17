@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>832</width>
-    <height>555</height>
+    <width>837</width>
+    <height>677</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>510</y>
+      <y>610</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>510</y>
+      <x>490</x>
+      <y>610</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -46,7 +46,7 @@
       <x>10</x>
       <y>40</y>
       <width>291</width>
-      <height>151</height>
+      <height>241</height>
      </rect>
     </property>
     <widget class="QWidget" name="layoutWidget">
@@ -54,25 +54,18 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>308</width>
-       <height>141</height>
+       <width>291</width>
+       <height>221</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Выберите режим работы:</string>
+         <string>Выберите части речи для поиска:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignHCenter|Qt::AlignTop</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="checkBox">
-        <property name="text">
-         <string>CheckBox</string>
         </property>
        </widget>
       </item>
@@ -218,8 +211,8 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>510</y>
+      <x>330</x>
+      <y>610</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -249,7 +242,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>210</y>
+      <y>310</y>
       <width>811</width>
       <height>291</height>
      </rect>
@@ -267,7 +260,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>190</y>
+      <y>290</y>
       <width>811</width>
       <height>16</height>
      </rect>
