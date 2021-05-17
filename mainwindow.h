@@ -16,11 +16,13 @@ public:
     ~MainWindow();
 
 private slots:
+
+    void on_startAnalysisButton_pressed();
+
     void on_pushButton_input_file_clicked();
 
     void on_pushButton_output_clicked();
 
-    void upload_text_to_textfield(QString path);
 
 private:
     Ui::MainWindow *ui;

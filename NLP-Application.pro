@@ -38,3 +38,17 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython3
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython3_d
+else:unix: LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython3
+
+INCLUDEPATH += $$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs
+DEPENDPATH += $$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython39
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython39_d
+else:unix: LIBS += -L$$PWD/../../../../../AppData/Local/Programs/Python/Python39/libs/ -lpython39
+
+INCLUDEPATH += $$PWD/../../../../../AppData/Local/Programs/Python/Python39/include
+DEPENDPATH += $$PWD/../../../../../AppData/Local/Programs/Python/Python39/include

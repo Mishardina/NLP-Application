@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pymorphy2
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
